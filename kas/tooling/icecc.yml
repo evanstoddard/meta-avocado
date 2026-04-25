@@ -9,3 +9,4 @@ local_conf_header:
     INHERIT += "icecc"
     ICECC_DISABLED ??= "0"
     ICECC_PARALLEL_MAKE = "${@os.getenv('ICECC_PARALLEL_MAKE', '-j 16')}"
+    ICECC_CLASS_DISABLE:append = " allarch"

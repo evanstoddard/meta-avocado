@@ -1,0 +1,6 @@
+header:
+  version: 16
+
+local_conf_header:
+  crates-io: |
+    FETCHCMD_wget = "/usr/bin/env wget -t 2 -T 100 --user-agent='bitbake (https://www.yoctoproject.org)'"
