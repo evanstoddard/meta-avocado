@@ -1,0 +1,6 @@
+header:
+  version: 16
+
+local_conf_header:
+  shallow-clones: |
+    BB_GIT_SHALLOW = "1"
