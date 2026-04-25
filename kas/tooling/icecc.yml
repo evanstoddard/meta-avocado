@@ -1,0 +1,11 @@
+header:
+  version: 16
+
+env:
+  ICECC_PARALLEL_MAKE: "-j 16"
+
+local_conf_header:
+  icecc: |
+    INHERIT += "icecc"
+    ICECC_DISABLED ??= "0"
+    ICECC_PARALLEL_MAKE = "${@os.getenv('ICECC_PARALLEL_MAKE', '-j 16')}"
